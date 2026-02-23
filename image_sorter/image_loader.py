@@ -41,13 +41,13 @@ def load_image_rgb(path: Path) -> Image.Image:
     """
     try:
         return _load_with_pillow(path)
-    except (UnidentifiedImageError, OSError) as e_pil:
-        # Try RAW loader; if that also fails, normalize as an UnidentifiedImageError
+    except Exception as e_pil:
+        # Any read error (corrupt/malformed jpg, png, heic, bmp, etc.) → try RAW or skip
         try:
             return _load_with_rawpy(path)
         except Exception as e_raw:
             raise UnidentifiedImageError(
-                f"Cannot read image {path}: {e_pil} / {e_raw}"
+                f"Cannot read image {path}: {e_pil!r} / {e_raw!r}"
             ) from e_raw
 
 
