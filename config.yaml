@@ -4,250 +4,214 @@ model:
   device: "cpu"
 
 categories:
-  # --- ẢNH CON NGƯỜI / GIA ĐÌNH ---
-  - id: "people_family"
-    name: "Ảnh người / gia đình"
+
+  # ==============================
+  # CON NGƯỜI
+  # ==============================
+
+  - id: "people_portrait"
+    name: "Chân dung"
     prompts:
-      - "a candid photo of family at home"
-      - "natural family portrait in living room"
-      - "parents with children smiling together"
-  - id: "portrait_closeup"
-    name: "Chân dung cận mặt"
+      - "portrait of a person"
+      - "close up face photo"
+      - "studio portrait"
+      - "person looking at camera"
+
+  - id: "family"
+    name: "Gia đình"
     prompts:
-      - "close up portrait of a single person"
-      - "face portrait with blurred background"
-      - "studio portrait with soft lighting"
-  - id: "selfie"
-    name: "Selfie"
-    prompts:
-      - "selfie taken with a phone"
-      - "front camera selfie of a person"
-      - "mirror selfie photo"
+      - "family photo at home"
+      - "parents with children"
+      - "family gathering"
+      - "family group portrait"
+
   - id: "kids_babies"
     name: "Trẻ em / em bé"
     prompts:
-      - "photo of a baby smiling"
-      - "kids playing together outside"
-      - "young child in colorful clothes"
-  - id: "group_event"
-    name: "Nhóm người / sự kiện"
-    prompts:
-      - "group photo at a party"
-      - "people gathered at an event"
-      - "friends posing together at night"
-  - id: "wedding"
-    name: "Đám cưới"
-    prompts:
-      - "wedding ceremony with bride and groom"
-      - "wedding reception with guests and decorations"
-      - "bride in a white wedding dress"
+      - "photo of a baby"
+      - "kids playing"
+      - "young child smiling"
+      - "toddler indoors"
 
-  # --- ĐỘNG VẬT ---
-  - id: "pets_animals"
+  - id: "group_people"
+    name: "Nhóm người / bạn bè"
+    prompts:
+      - "group photo of friends"
+      - "people posing together"
+      - "friends at a party"
+      - "group selfie"
+
+  # ==============================
+  # ĐỘNG VẬT
+  # ==============================
+
+  - id: "pets"
     name: "Thú cưng"
     prompts:
-      - "photo of a pet dog at home"
-      - "cat lying on a bed"
-      - "pet animals indoors"
-  - id: "wildlife_animals"
+      - "pet dog"
+      - "pet cat"
+      - "animal indoors"
+      - "cute pet at home"
+
+  - id: "wildlife"
     name: "Động vật hoang dã"
     prompts:
       - "wild animal in nature"
-      - "bird in the forest"
-      - "animal in the wild outdoors"
+      - "bird outdoors"
+      - "animal in forest"
+      - "wildlife photography"
 
-  # --- PHONG CẢNH / DU LỊCH ---
-  - id: "landscape_nature"
-    name: "Phong cảnh thiên nhiên"
-    prompts:
-      - "wide landscape photo with mountains and sky"
-      - "nature scenery with trees and river"
-      - "beautiful natural landscape"
-  - id: "cityscape_architecture"
-    name: "Thành phố / kiến trúc"
-    prompts:
-      - "city skyline at sunset"
-      - "street view with tall buildings"
-      - "urban architecture and skyscrapers"
-  - id: "beach_sea"
-    name: "Biển / bãi biển"
-    prompts:
-      - "sandy beach with ocean waves"
-      - "people relaxing on a beach"
-      - "tropical beach with palm trees"
-  - id: "mountain"
-    name: "Núi non"
-    prompts:
-      - "mountain landscape with snowy peaks"
-      - "hiking trail in the mountains"
-      - "dramatic mountain scenery"
-  - id: "travel_tourist"
-    name: "Ảnh du lịch / điểm đến"
-    prompts:
-      - "tourist taking photos at a famous landmark"
-      - "travel photo in a foreign city"
-      - "vacation photo with sightseeing"
+  # ==============================
+  # DU LỊCH & PHONG CẢNH
+  # ==============================
 
-  # --- ÁNH SÁNG / THỜI ĐIỂM ---
-  - id: "sunset_sunrise"
-    name: "Hoàng hôn / bình minh"
+  - id: "landscape"
+    name: "Phong cảnh"
     prompts:
-      - "sunset with orange sky"
-      - "sunrise over the horizon"
-      - "colorful sky at dusk"
-  - id: "night_city"
-    name: "Đêm / thành phố đêm"
-    prompts:
-      - "night city with lights and streets"
-      - "long exposure night city photo"
-      - "buildings glowing at night"
-  - id: "night_sky_stars"
-    name: "Bầu trời đêm / sao"
-    prompts:
-      - "night sky full of stars"
-      - "milky way over landscape"
-      - "astrophotography of the night sky"
+      - "landscape photo"
+      - "mountains and sky"
+      - "river and trees"
+      - "nature scenery"
 
-  # --- ĐỜI SỐNG / ĐỜI THƯỜNG ---
-  - id: "street_life"
-    name: "Đời sống đường phố"
+  - id: "beach"
+    name: "Biển"
     prompts:
-      - "street photography of people walking"
-      - "busy street market with people"
-      - "candid street scene in a city"
+      - "beach with ocean"
+      - "people at the beach"
+      - "waves and sand"
+      - "tropical seaside"
+
+  - id: "city"
+    name: "Thành phố"
+    prompts:
+      - "city skyline"
+      - "street with buildings"
+      - "urban scene"
+      - "downtown area"
+
+  - id: "travel"
+    name: "Du lịch"
+    prompts:
+      - "tourist at landmark"
+      - "vacation photo"
+      - "travel photo"
+      - "sightseeing"
+
+  # ==============================
+  # SINH HOẠT & ĐỜI SỐNG
+  # ==============================
+
   - id: "home_indoor"
-    name: "Không gian trong nhà"
+    name: "Trong nhà"
     prompts:
-      - "cozy living room with furniture"
-      - "indoor home scene with decorations"
-      - "kitchen or dining room interior"
-  - id: "interior_design"
-    name: "Nội thất / decor"
-    prompts:
-      - "interior design of a modern apartment"
-      - "well designed living room with furniture"
-      - "home decor with plants and art"
+      - "living room interior"
+      - "kitchen scene"
+      - "indoor home photo"
+      - "room with furniture"
 
-  # --- THỨC ĂN / ĐỒ UỐNG ---
+  - id: "street_life"
+    name: "Đường phố"
+    prompts:
+      - "street photography"
+      - "people walking on street"
+      - "busy market"
+      - "urban daily life"
+
+  # ==============================
+  # ĐỒ ĂN & ĐỒ UỐNG
+  # ==============================
+
   - id: "food"
     name: "Đồ ăn"
     prompts:
-      - "plate of food on a table"
-      - "close up of delicious meal"
-      - "restaurant dish beautifully plated"
-  - id: "drinks_coffee"
-    name: "Đồ uống / cà phê"
-    prompts:
-      - "coffee cup on a table"
-      - "latte art in a coffee shop"
-      - "drinks in glasses at a bar"
+      - "plate of food"
+      - "restaurant dish"
+      - "meal on table"
+      - "close up food photo"
 
-  # --- THỂ THAO / HOẠT ĐỘNG ---
-  - id: "sports_action"
-    name: "Thể thao / hành động"
+  - id: "drinks"
+    name: "Đồ uống"
     prompts:
-      - "sports action shot of a player running"
-      - "people playing football or soccer"
-      - "athlete in motion during a game"
+      - "coffee cup"
+      - "drink in glass"
+      - "beverage on table"
+      - "latte art"
 
-  # --- XE CỘ / PHƯƠNG TIỆN ---
-  - id: "cars_vehicles"
-    name: "Xe cộ / phương tiện"
+  # ==============================
+  # CÔNG VIỆC & TÀI LIỆU
+  # ==============================
+
+  - id: "documents"
+    name: "Tài liệu"
     prompts:
-      - "car parked on the street"
-      - "motorbike or motorcycle on the road"
-      - "close up of a car exterior"
+      - "scanned document"
+      - "paper with text"
+      - "printed page"
+      - "document on desk"
 
-  # --- HOA / CÂY CỐI / THIÊN NHIÊN GẦN ---
+  - id: "whiteboard_notes"
+    name: "Ghi chú / bảng trắng"
+    prompts:
+      - "whiteboard with writing"
+      - "handwritten notes"
+      - "sketch on paper"
+      - "diagram on board"
+
+  - id: "screenshot"
+    name: "Screenshot"
+    prompts:
+      - "computer screenshot"
+      - "mobile screen screenshot"
+      - "software window screenshot"
+      - "chat app screenshot"
+
+  # ==============================
+  # KHÁC
+  # ==============================
+
+  - id: "vehicles"
+    name: "Xe cộ"
+    prompts:
+      - "car on the road"
+      - "motorcycle parked"
+      - "vehicle outdoors"
+      - "car close up"
+
+  - id: "products_objects"
+    name: "Sản phẩm / đồ vật"
+    prompts:
+      - "product photo"
+      - "object on table"
+      - "gadget on desk"
+      - "studio object photo"
+
+
   - id: "flowers_plants"
     name: "Hoa / cây cối"
     prompts:
-      - "macro photo of a flower"
-      - "plants in a garden with green leaves"
-      - "bouquet of colorful flowers"
-  - id: "macro_detail"
-    name: "Macro / chi tiết nhỏ"
-    prompts:
-      - "macro close up detail of an object"
-      - "texture and patterns photographed closely"
-      - "small object photographed with shallow depth of field"
+      - "flowers in a field"
+      - "close up flower"
+      - "plants and grass"
+      - "orange flowers in garden"
 
-  # --- TÀI LIỆU / ẢNH CHỤP MÀN HÌNH / CÔNG VIỆC ---
-  - id: "document"
-    name: "Tài liệu / giấy tờ"
+  - id: "books"
+    name: "Sách"
     prompts:
-      - "scanned document or paper"
-      - "photo of a printed page with text"
-      - "paper document on a desk"
-  - id: "whiteboard_notes"
-    name: "Bảng trắng / ghi chú"
-    prompts:
-      - "photo of handwriting on a whiteboard"
-      - "sketches and notes on paper"
-      - "handwritten notes and diagrams"
-  - id: "screenshot_desktop"
-    name: "Screenshot desktop"
-    prompts:
-      - "computer desktop screenshot"
-      - "screenshot of a software window on a computer"
-      - "screenshot of a code editor or IDE"
-  - id: "screenshot_mobile"
-    name: "Screenshot điện thoại"
-    prompts:
-      - "smartphone screen screenshot"
-      - "mobile app screenshot on a phone"
-      - "screenshot of a chat application on phone"
-  - id: "ui_app_design"
-    name: "UI / thiết kế app"
-    prompts:
-      - "user interface design mockup"
-      - "mobile app UI screens side by side"
-      - "web design layout with components"
+      - "book on table"
+      - "hardcover book"
+      - "book cover close up"
+      - "reading book indoors"
 
-  # --- MEME / ART / ĐỒ HOẠ ---
-  - id: "memes_comics"
-    name: "Meme / comic"
+  - id: "sunset"
+    name: "Hoàng hôn"
     prompts:
-      - "internet meme image with bold text"
-      - "funny comic strip panel"
-      - "image macro meme with caption"
-  - id: "art_illustration"
-    name: "Minh hoạ / tranh vẽ"
-    prompts:
-      - "digital illustration artwork"
-      - "hand drawn sketch or drawing"
-      - "colorful painting or art piece"
-  - id: "anime_cartoon"
-    name: "Anime / hoạt hình"
-    prompts:
-      - "anime style character illustration"
-      - "cartoon character drawing"
-      - "frame from an animated show"
-
-  # --- SẢN PHẨM / ĐỒ VẬT ---
-  - id: "product_objects"
-    name: "Sản phẩm / đồ vật"
-    prompts:
-      - "product photo on a clean background"
-      - "object placed on a table for catalog"
-      - "studio photo of a gadget or device"
-
-  # --- THÔNG TIN / ĐỒ THỊ / MÀN HÌNH CHỤP LẠI ---
-  - id: "charts_graphs"
-    name: "Biểu đồ / thống kê"
-    prompts:
-      - "screenshot of charts and graphs"
-      - "bar chart or line chart with numbers"
-      - "data visualization on a slide"
-  - id: "maps"
-    name: "Bản đồ"
-    prompts:
-      - "screenshot of a map application"
-      - "map with streets and labels"
-      - "navigation map screenshot on phone"
+      - "sunset sky"
+      - "dramatic clouds at sunset"
+      - "orange sky evening"
+      - "sunset landscape"
 
 thresholds:
-  similarity_min: 0.22
+  similarity_min: 0.1
 
 behavior:
   move_files: true
