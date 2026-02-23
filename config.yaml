@@ -6,11 +6,11 @@ model:
 categories:
 
   # ==============================
-  # CON NGƯỜI
+  # PEOPLE
   # ==============================
 
   - id: "people_portrait"
-    name: "Chân dung"
+    name: "Portrait"
     prompts:
       - "portrait of a person"
       - "close up face photo"
@@ -22,7 +22,7 @@ categories:
       - "casual portrait at home"
 
   - id: "family"
-    name: "Gia đình"
+    name: "Family"
     prompts:
       - "family photo at home"
       - "parents with children"
@@ -32,7 +32,7 @@ categories:
       - "family celebration moment"
 
   - id: "kids_babies"
-    name: "Trẻ em / em bé"
+    name: "Kids / Babies"
     prompts:
       - "photo of a baby"
       - "kids playing"
@@ -42,7 +42,7 @@ categories:
       - "school age kid portrait"
 
   - id: "group_people"
-    name: "Nhóm người / bạn bè"
+    name: "Group / Friends"
     prompts:
       - "group photo of friends"
       - "people posing together"
@@ -52,11 +52,11 @@ categories:
       - "people standing together indoors"
 
   # ==============================
-  # ĐỘNG VẬT
+  # ANIMALS
   # ==============================
 
   - id: "pets"
-    name: "Thú cưng"
+    name: "Pets"
     prompts:
       - "pet dog"
       - "pet cat"
@@ -66,7 +66,7 @@ categories:
       - "cat close up portrait"
 
   - id: "wildlife"
-    name: "Động vật hoang dã"
+    name: "Wildlife"
     prompts:
       - "wild animal in nature"
       - "bird outdoors"
@@ -76,11 +76,11 @@ categories:
       - "bird sitting on branch"
 
   # ==============================
-  # DU LỊCH & PHONG CẢNH
+  # TRAVEL & LANDSCAPE
   # ==============================
 
   - id: "landscape"
-    name: "Phong cảnh"
+    name: "Landscape"
     prompts:
       - "landscape photo"
       - "mountains and sky"
@@ -92,7 +92,7 @@ categories:
       - "open field countryside"
 
   - id: "beach"
-    name: "Biển"
+    name: "Beach"
     prompts:
       - "beach with ocean"
       - "people at the beach"
@@ -102,7 +102,7 @@ categories:
       - "sunset at the beach"
 
   - id: "city"
-    name: "Thành phố"
+    name: "City"
     prompts:
       - "city skyline"
       - "street with buildings"
@@ -113,7 +113,7 @@ categories:
       - "road with traffic lights"
 
   - id: "travel"
-    name: "Du lịch"
+    name: "Travel"
     prompts:
       - "tourist at landmark"
       - "vacation photo"
@@ -123,11 +123,11 @@ categories:
       - "temple or historic architecture"
 
   # ==============================
-  # SINH HOẠT & ĐỜI SỐNG
+  # DAILY LIFE
   # ==============================
 
   - id: "home_indoor"
-    name: "Trong nhà"
+    name: "Indoor / Home"
     prompts:
       - "living room interior"
       - "kitchen scene"
@@ -138,7 +138,7 @@ categories:
       - "corridor perspective"
 
   - id: "street_life"
-    name: "Đường phố"
+    name: "Street Life"
     prompts:
       - "street photography"
       - "people walking on street"
@@ -148,11 +148,11 @@ categories:
       - "sidewalk in neighborhood"
 
   # ==============================
-  # ĐỒ ĂN & ĐỒ UỐNG
+  # FOOD & DRINKS
   # ==============================
 
   - id: "food"
-    name: "Đồ ăn"
+    name: "Food"
     prompts:
       - "plate of food"
       - "restaurant dish"
@@ -162,7 +162,7 @@ categories:
       - "food photography indoors"
 
   - id: "drinks"
-    name: "Đồ uống"
+    name: "Drinks"
     prompts:
       - "coffee cup"
       - "drink in glass"
@@ -172,11 +172,11 @@ categories:
       - "tea cup on table"
 
   # ==============================
-  # CÔNG VIỆC & TÀI LIỆU
+  # WORK & DOCUMENTS
   # ==============================
 
   - id: "documents"
-    name: "Tài liệu"
+    name: "Documents"
     prompts:
       - "scanned document"
       - "paper with text"
@@ -186,7 +186,7 @@ categories:
       - "form with writing"
 
   - id: "whiteboard_notes"
-    name: "Ghi chú / bảng trắng"
+    name: "Whiteboard / Notes"
     prompts:
       - "whiteboard with writing"
       - "handwritten notes"
@@ -204,11 +204,11 @@ categories:
       - "code editor screenshot"
 
   # ==============================
-  # KHÁC
+  # OTHERS
   # ==============================
 
   - id: "vehicles"
-    name: "Xe cộ"
+    name: "Vehicles"
     prompts:
       - "car on the road"
       - "motorcycle parked"
@@ -218,7 +218,7 @@ categories:
       - "train on railway"
 
   - id: "products_objects"
-    name: "Sản phẩm / đồ vật"
+    name: "Products / Objects"
     prompts:
       - "product photo"
       - "object on table"
@@ -228,7 +228,7 @@ categories:
       - "small object close up"
 
   - id: "flowers_plants"
-    name: "Hoa / cây cối"
+    name: "Flowers / Plants"
     prompts:
       - "flowers in a field"
       - "close up flower"
@@ -238,7 +238,7 @@ categories:
       - "macro flower photography"
 
   - id: "books"
-    name: "Sách"
+    name: "Books"
     prompts:
       - "book on table"
       - "hardcover book"
@@ -248,7 +248,7 @@ categories:
       - "book lying on desk"
 
   - id: "sunset"
-    name: "Hoàng hôn"
+    name: "Sunset"
     prompts:
       - "sunset sky"
       - "dramatic clouds at sunset"
