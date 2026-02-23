@@ -16,6 +16,10 @@ categories:
       - "close up face photo"
       - "studio portrait"
       - "person looking at camera"
+      - "man standing indoors"
+      - "woman portrait natural light"
+      - "person sitting alone"
+      - "casual portrait at home"
 
   - id: "family"
     name: "Gia đình"
@@ -24,6 +28,8 @@ categories:
       - "parents with children"
       - "family gathering"
       - "family group portrait"
+      - "family meal together"
+      - "family celebration moment"
 
   - id: "kids_babies"
     name: "Trẻ em / em bé"
@@ -32,6 +38,8 @@ categories:
       - "kids playing"
       - "young child smiling"
       - "toddler indoors"
+      - "child outdoors in park"
+      - "school age kid portrait"
 
   - id: "group_people"
     name: "Nhóm người / bạn bè"
@@ -40,6 +48,8 @@ categories:
       - "people posing together"
       - "friends at a party"
       - "group selfie"
+      - "team photo"
+      - "people standing together indoors"
 
   # ==============================
   # ĐỘNG VẬT
@@ -52,6 +62,8 @@ categories:
       - "pet cat"
       - "animal indoors"
       - "cute pet at home"
+      - "dog lying on floor"
+      - "cat close up portrait"
 
   - id: "wildlife"
     name: "Động vật hoang dã"
@@ -60,6 +72,8 @@ categories:
       - "bird outdoors"
       - "animal in forest"
       - "wildlife photography"
+      - "animal in grass field"
+      - "bird sitting on branch"
 
   # ==============================
   # DU LỊCH & PHONG CẢNH
@@ -72,6 +86,10 @@ categories:
       - "mountains and sky"
       - "river and trees"
       - "nature scenery"
+      - "railway tracks in park"
+      - "field with grass and houses"
+      - "park with green trees"
+      - "open field countryside"
 
   - id: "beach"
     name: "Biển"
@@ -80,6 +98,8 @@ categories:
       - "people at the beach"
       - "waves and sand"
       - "tropical seaside"
+      - "coastline view"
+      - "sunset at the beach"
 
   - id: "city"
     name: "Thành phố"
@@ -88,6 +108,9 @@ categories:
       - "street with buildings"
       - "urban scene"
       - "downtown area"
+      - "city at night"
+      - "apartment buildings"
+      - "road with traffic lights"
 
   - id: "travel"
     name: "Du lịch"
@@ -96,6 +119,8 @@ categories:
       - "vacation photo"
       - "travel photo"
       - "sightseeing"
+      - "famous building"
+      - "temple or historic architecture"
 
   # ==============================
   # SINH HOẠT & ĐỜI SỐNG
@@ -108,6 +133,9 @@ categories:
       - "kitchen scene"
       - "indoor home photo"
       - "room with furniture"
+      - "hallway interior"
+      - "person inside building"
+      - "corridor perspective"
 
   - id: "street_life"
     name: "Đường phố"
@@ -116,6 +144,8 @@ categories:
       - "people walking on street"
       - "busy market"
       - "urban daily life"
+      - "railway tracks in city"
+      - "sidewalk in neighborhood"
 
   # ==============================
   # ĐỒ ĂN & ĐỒ UỐNG
@@ -128,6 +158,8 @@ categories:
       - "restaurant dish"
       - "meal on table"
       - "close up food photo"
+      - "home cooked meal"
+      - "food photography indoors"
 
   - id: "drinks"
     name: "Đồ uống"
@@ -136,6 +168,8 @@ categories:
       - "drink in glass"
       - "beverage on table"
       - "latte art"
+      - "bottle of drink"
+      - "tea cup on table"
 
   # ==============================
   # CÔNG VIỆC & TÀI LIỆU
@@ -148,6 +182,8 @@ categories:
       - "paper with text"
       - "printed page"
       - "document on desk"
+      - "official paper"
+      - "form with writing"
 
   - id: "whiteboard_notes"
     name: "Ghi chú / bảng trắng"
@@ -156,6 +192,7 @@ categories:
       - "handwritten notes"
       - "sketch on paper"
       - "diagram on board"
+      - "notebook with pen"
 
   - id: "screenshot"
     name: "Screenshot"
@@ -164,6 +201,7 @@ categories:
       - "mobile screen screenshot"
       - "software window screenshot"
       - "chat app screenshot"
+      - "code editor screenshot"
 
   # ==============================
   # KHÁC
@@ -176,6 +214,8 @@ categories:
       - "motorcycle parked"
       - "vehicle outdoors"
       - "car close up"
+      - "bicycle on street"
+      - "train on railway"
 
   - id: "products_objects"
     name: "Sản phẩm / đồ vật"
@@ -184,7 +224,8 @@ categories:
       - "object on table"
       - "gadget on desk"
       - "studio object photo"
-
+      - "book on wooden table"
+      - "small object close up"
 
   - id: "flowers_plants"
     name: "Hoa / cây cối"
@@ -193,6 +234,8 @@ categories:
       - "close up flower"
       - "plants and grass"
       - "orange flowers in garden"
+      - "green grass close up"
+      - "macro flower photography"
 
   - id: "books"
     name: "Sách"
@@ -201,6 +244,8 @@ categories:
       - "hardcover book"
       - "book cover close up"
       - "reading book indoors"
+      - "stack of books"
+      - "book lying on desk"
 
   - id: "sunset"
     name: "Hoàng hôn"
@@ -209,9 +254,11 @@ categories:
       - "dramatic clouds at sunset"
       - "orange sky evening"
       - "sunset landscape"
+      - "sunset with dark silhouette"
+      - "evening sky with clouds"
 
 thresholds:
-  similarity_min: 0.1
+  similarity_min: 0.15
 
 behavior:
   move_files: true
