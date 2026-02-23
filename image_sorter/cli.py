@@ -5,13 +5,14 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Optional
 
-from PIL import Image, UnidentifiedImageError
+from PIL import UnidentifiedImageError
 from tqdm import tqdm
 
 from .config import load_config, AppConfig
 from .model import load_clip_model, encode_image
 from .categorize import build_categories, categorize_image
 from .fs_ops import iter_images, build_dest_path, move_or_copy
+from .image_loader import load_image_rgb
 
 
 @dataclass
@@ -154,10 +155,9 @@ def main() -> None:
 
     for img_path in tqdm(images, desc="Processing images", unit="img"):
         try:
-            with Image.open(img_path) as img:
-                img = img.convert("RGB")
-                img_emb = encode_image(img, resources)
-        except (UnidentifiedImageError, OSError) as e:
+            img = load_image_rgb(img_path)
+            img_emb = encode_image(img, resources)
+        except (UnidentifiedImageError, OSError, ImportError, ValueError) as e:
             print(f"Skipping unreadable image {img_path}: {e}")
             continue
 
